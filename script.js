@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initScrollReveal();
     initStatCounters();
+    initSkillBars();
     initSmoothScroll();
 });
 
@@ -138,6 +139,26 @@ function animateCounter(element) {
     }
     
     requestAnimationFrame(update);
+}
+
+// ===================================
+// Skill Bar Animations
+// ===================================
+function initSkillBars() {
+    const bars = document.querySelectorAll('.skill-bar-fill[data-level]');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const level = entry.target.dataset.level;
+                entry.target.style.width = level + '%';
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    bars.forEach(bar => observer.observe(bar));
 }
 
 // ===================================
