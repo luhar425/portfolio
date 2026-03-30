@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer portfolio — building scalable backend systems, cloud services, and full-stack applications.">
+    <title>Rahul Niroop | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">RN<span class="logo-dot">.</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Rahul Niroop</span>
+            </h1>
+            <p class="hero-subtitle">Software Engineer building scalable backend systems, cloud services, and full-stack applications.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+                    <span>View Projects</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Microservices Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Enterprise Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">Building software<br><span class="text-gradient">that scales.</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">I'm a software engineer with experience designing <strong>backend platforms</strong>, <strong>cloud workflows</strong>, and <strong>full-stack applications</strong> across enterprise environments.</p>
+                    <p class="about-text">My work includes serverless orchestration, configuration automation, API development, asynchronous messaging, and secure microservice architecture.</p>
+                    <p class="about-text">I thrive at the intersection of system design and clean code — building solutions that are not just functional, but maintainable, observable, and production-ready.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Backend & Cloud</h3>
+                            <p>Serverless, microservices, AWS infrastructure</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Performance</h3>
+                            <p>Scalable systems, async messaging, caching</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Security</h3>
+                            <p>IAM, access policies, secure architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-filename">profile.json</span>
+                        </div>
+                        <pre class="code-body"><code>{
+  <span class="code-key">"name"</span>: <span class="code-string">"Rahul Niroop"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Software Engineer"</span>,
+  <span class="code-key">"focus"</span>: [
+    <span class="code-string">"Backend Systems"</span>,
+    <span class="code-string">"Cloud Services"</span>,
+    <span class="code-string">"Full-Stack Apps"</span>
+  ],
+  <span class="code-key">"passion"</span>: <span class="code-string">"Building at scale"</span>
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / Projects</span>
+                <h2 class="section-title">Personal<br><span class="text-gradient">projects.</span></h2>
+                <p class="section-subtitle">Open-source work and independent explorations — view them on GitHub.</p>
+            </div>
+            <div class="projects-grid">
+
+                <article class="project-card project-card-featured" id="project-svm">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">SVM</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <h3 class="project-title">Support Vector Machine</h3>
+                        <p class="project-desc">Built and tuned SVM models in R on the OJ dataset to classify purchase behavior and compare linear, radial, and polynomial kernels. Addressed bias-variance tradeoffs through cross-validation and hyperparameter tuning.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">84.4%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Kernels</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">R</span>
+                                <span class="metric-label">Language</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/luhar425/rahul-/blob/b471e2664e73a3adaeaaee596d72c21e1a337215/machine%20learning/support_vector_machines.r" target="_blank" rel="noopener" class="project-link" id="svm-github-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-visual">
+                        <div class="project-icon-grid">
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M2 20h20M5 20V4h3v16M10 20V10h3v10M15 20V7h3v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-featured" id="project-placement">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SVM</span>
+                            <span class="tag">Ridge Regression</span>
+                        </div>
+                        <h3 class="project-title">Placement Prediction Model</h3>
+                        <p class="project-desc">Developed a machine learning model to predict student placement outcomes using academic and experience-related features. Applied data cleaning, EDA, and feature engineering before training SVM and Ridge Regression classifiers.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">SVM</span>
+                                <span class="metric-label">Classifier</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Ridge</span>
+                                <span class="metric-label">Regression</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">EDA</span>
+                                <span class="metric-label">Analysis</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/luhar425/rahul-/blob/b471e2664e73a3adaeaaee596d72c21e1a337215/machine%20learning/support_vector_machines.r" target="_blank" rel="noopener" class="project-link" id="placement-github-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-visual">
+                        <div class="project-icon-grid">
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <div class="p-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Projects Section -->
+    <section class="section projects work-projects" id="work-projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02b / Experience</span>
+                <h2 class="section-title">Work<br><span class="text-gradient">projects.</span></h2>
+                <p class="section-subtitle">Professional projects built in enterprise environments.</p>
+            </div>
+            <div class="projects-grid">
+
+                <article class="project-card" id="project-1">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AWS Lambda</span>
+                            <span class="tag">Serverless</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                        <h3 class="project-title">Serverless Orchestration Engine</h3>
+                        <p class="project-desc">Designed and built a serverless orchestration engine on AWS Lambda, coordinating workflows across 12 microservices with fault tolerance, retry logic, and distributed tracing.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">12</span>
+                                <span class="metric-label">Microservices</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AWS</span>
+                                <span class="metric-label">Cloud Platform</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Lambda</span>
+                                <span class="metric-label">Compute</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" id="project-2">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Go</span>
+                            <span class="tag">AWS AppConfig</span>
+                        </div>
+                        <h3 class="project-title">Configuration Management Platform</h3>
+                        <p class="project-desc">Built an automated configuration management platform using Java, Go, and AWS AppConfig to streamline feature flags, environment configs, and deployment rollouts.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Java</span>
+                                <span class="metric-label">Primary</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Go</span>
+                                <span class="metric-label">Services</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AWS</span>
+                                <span class="metric-label">AppConfig</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" id="project-3">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">S3</span>
+                            <span class="tag">CloudWatch</span>
+                            <span class="tag">IAM</span>
+                        </div>
+                        <h3 class="project-title">S3 Observability &amp; Security</h3>
+                        <p class="project-desc">Implemented comprehensive S3 observability and security improvements using CloudWatch metrics, custom alarms, IAM policies, and bucket-level access controls.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">S3</span>
+                                <span class="metric-label">Storage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">IAM</span>
+                                <span class="metric-label">Security</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">CW</span>
+                                <span class="metric-label">Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" id="project-4">
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Oracle</span>
+                        </div>
+                        <h3 class="project-title">Banking Microservices Platform</h3>
+                        <p class="project-desc">Architected a banking microservices platform using Java, Spring Boot, Kafka/JMS messaging, Oracle, and MS SQL Server for high-throughput transactional processing.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Kafka</span>
+                                <span class="metric-label">Messaging</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">JMS</span>
+                                <span class="metric-label">Queue</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Oracle</span>
+                                <span class="metric-label">Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" id="project-5">
+                    <div class="project-number">05</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Full-Stack</span>
+                        </div>
+                        <h3 class="project-title">Patient Appointment Dashboard</h3>
+                        <p class="project-desc">Developed a React-based patient appointment dashboard with real-time scheduling, integrated backend APIs, and role-based access for healthcare workflows.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">React</span>
+                                <span class="metric-label">Frontend</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">REST</span>
+                                <span class="metric-label">API</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RBAC</span>
+                                <span class="metric-label">Auth</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / Skills</span>
+                <h2 class="section-title">Tech<br><span class="text-gradient">stack.</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Languages
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Go</span>
+                        <span class="skill-pill">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Frameworks
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Spring Boot</span>
+                        <span class="skill-pill">Spring Security</span>
+                        <span class="skill-pill">Spring Data JPA</span>
+                        <span class="skill-pill">Hibernate</span>
+                        <span class="skill-pill">React</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2 20h20M5 20V4h3v16M10 20V10h3v10M15 20V7h3v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Databases
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PostgreSQL</span>
+                        <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">Oracle</span>
+                        <span class="skill-pill">MS SQL Server</span>
+                        <span class="skill-pill">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">Docker</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        Architecture
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Microservices</span>
+                        <span class="skill-pill">Distributed Systems</span>
+                        <span class="skill-pill">Kafka</span>
+                        <span class="skill-pill">JMS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section resume" id="resume">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 / Resume</span>
+                <h2 class="section-title">Experience<br><span class="text-gradient">& background.</span></h2>
+            </div>
+            <div class="resume-content">
+                <div class="resume-card">
+                    <div class="resume-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Download Resume</h3>
+                    <p>Get a comprehensive overview of my experience, education, and technical skills in a clean, ATS-friendly format.</p>
+                    <a href="#" class="btn btn-primary resume-btn" id="download-resume-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+                <div class="resume-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">Professional</span>
+                            <h4>Backend & Cloud Engineering</h4>
+                            <p>Serverless orchestration, configuration management, S3 security — designing systems for scale and reliability on AWS.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">Enterprise</span>
+                            <h4>Banking & Financial Services</h4>
+                            <p>Microservices architecture with Spring Boot, Kafka, and enterprise databases for high-throughput financial applications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">Full-Stack</span>
+                            <h4>Application Development</h4>
+                            <p>React frontends integrated with robust backend APIs, building user-facing dashboards for real-world healthcare and business workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 / Contact</span>
+                <h2 class="section-title">Let's<br><span class="text-gradient">connect.</span></h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">I'm always open to discussing new opportunities, interesting projects, or just connecting with fellow engineers. Drop me a message or find me on social.</p>
+                <div class="contact-grid">
+                    <a href="mailto:rahulniroop123@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">rahulniroop123@gmail.com</span>
+                        <span class="contact-card-action">Send email →</span>
+                    </a>
+                    <a href="https://github.com/luhar425" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">github.com/luhar425</span>
+                        <span class="contact-card-action">View profile →</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahul-niroop-9697711b2" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">linkedin.com/in/rahul-niroop</span>
+                        <span class="contact-card-action">Connect →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">RN<span class="logo-dot">.</span></span>
+                <p class="footer-text">Designed & built by Rahul Niroop</p>
+                <div class="footer-links">
+                    <a href="https://github.com/luhar425" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahul-niroop-9697711b2" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="mailto:rahulniroop123@gmail.com" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
