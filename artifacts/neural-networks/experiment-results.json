@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Circle baseline",
+    "epoch": 200,
+    "train": 0.003,
+    "test": 0.01,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.36512&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      4,
+      2
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 0
+  },
+  {
+    "name": "Circle noise 30",
+    "epoch": 217,
+    "train": 0.077,
+    "test": 0.142,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=30&networkShape=4,2&seed=0.31634&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      4,
+      2
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 30
+  },
+  {
+    "name": "Circle squared features",
+    "epoch": 200,
+    "train": 0,
+    "test": 0,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.95838&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      4,
+      2
+    ],
+    "features": [
+      "x1",
+      "x2",
+      "x1²",
+      "x2²"
+    ],
+    "noise": 0
+  },
+  {
+    "name": "Gaussian clusters",
+    "epoch": 200,
+    "train": 0,
+    "test": 0,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.34927&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      4,
+      2
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 0
+  },
+  {
+    "name": "Spiral baseline",
+    "epoch": 200,
+    "train": 0.447,
+    "test": 0.502,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.39250&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      4,
+      2
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 0
+  },
+  {
+    "name": "Spiral larger network",
+    "epoch": 200,
+    "train": 0.391,
+    "test": 0.451,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8,4&seed=0.39250&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      8,
+      8,
+      4
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 0
+  },
+  {
+    "name": "Spiral larger network, extended training",
+    "epoch": 1000,
+    "train": 0.006,
+    "test": 0.032,
+    "url": "https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8,4&seed=0.39250&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false",
+    "shape": [
+      8,
+      8,
+      4
+    ],
+    "features": [
+      "x1",
+      "x2"
+    ],
+    "noise": 0
+  }
+]
